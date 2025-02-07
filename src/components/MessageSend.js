@@ -42,18 +42,18 @@ export default function MessageSend() {
 
         // Emailing
 
-        const templateParams = {
-            message: messageInput,
-            date: dayjs(date).format('DD/MM/YYYY'),
-            time: time
-        }
+        // const templateParams = {
+        //     message: messageInput,
+        //     date: dayjs(date).format('DD/MM/YYYY'),
+        //     time: time
+        // }
 
-        emailjs.send(serviceId, templateId, templateParams, publicKey)
-            .then((response) => {
-            })
-            .catch((error) => {
-                console.log(error);
-            })
+        // emailjs.send(serviceId, templateId, templateParams, publicKey)
+        //     .then((response) => {
+        //     })
+        //     .catch((error) => {
+        //         console.log(error);
+        //     })
 
         setDate(new Date());
         setTime(null);
